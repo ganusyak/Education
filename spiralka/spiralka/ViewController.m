@@ -120,13 +120,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-
+// comment here
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     NSMutableArray *array = [self createSquareArrayWithSize:3];
+    NSLog(@"Empty array");
     [self printSquareArray:array];
     NSMutableArray *newArray = [self moveInArray:array toPositionX:0 andPositionY:0 withDirection:0 andCounter:1];
+    NSLog(@"Final array");
     [self printSquareArray:newArray];
 }
 
